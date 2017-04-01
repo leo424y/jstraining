@@ -1,49 +1,49 @@
-# 前端开发的历史和趋势
+# 前端開發的歷史和趨勢
 
 ---
 
-## 什么是前端
+## 什麼是前端
 
-- 前端：针对浏览器的开发，代码在浏览器运行
-- 后端：针对服务器的开发，代码在服务器运行
+- 前端：針對瀏覽器的開發，程式碼在瀏覽器執行
+- 後端：針對伺服器的開發，程式碼在伺服器執行
 
 ![](./images/frontend.png)
 
 ---
 
-## 前后端不分的时代
+## 前後端不分的時代
 
-互联网发展的早期，前后端开发是一体的，前端代码是后端代码的一部分。
+網際網路發展的早期，前後端開發是一體的，前端程式碼是後端程式碼的一部分。
 
-1. 后端收到浏览器的请求
-1. 生成静态页面
-1. 发送到浏览器
-
----
-
-## 后端 MVC 的开发模式
-
-那时的网站开发，采用的是后端 MVC 模式。
-
-- Model（模型层）：提供/保存数据
-- Controller（控制层）：数据处理，实现业务逻辑
-- View（视图层）：展示数据，提供用户界面
-
-前端只是后端 MVC 的 V。
+1. 後端收到瀏覽器的請求
+1. 生成靜態頁面
+1. 傳送到瀏覽器
 
 ---
 
-以 PHP 框架 Laravel 为例。
+## 後端 MVC 的開發模式
+
+那時的網站開發，採用的是後端 MVC 模式。
+
+- Model（模型層）：提供/儲存資料
+- Controller（控制層）：資料處理，實現業務邏輯
+- View（檢視層）：展示資料，提供使用者介面
+
+前端只是後端 MVC 的 V。
+
+---
+
+以 PHP 框架 Laravel 為例。
 
 ![](./images/laravel-mvc.png)
 
 ---
 
-## 前端工程师的角色
+## 前端工程師的角色
 
-那时的前端工程师，实际上是模板工程师，负责编写页面模板。
+那時的前端工程師，實際上是模板工程師，負責編寫頁面模板。
 
-后端代码读取模板，替换变量，渲染出页面。
+後端程式碼讀取模板，替換變數，渲染出頁面。
 
 ---
 
@@ -67,33 +67,33 @@
 
 ## Ajax
 
-Ajax 技术诞生，改变了一切。
+Ajax 技術誕生，改變了一切。
 
 - 2004年：Gmail
-- 2005年：Google 地图
+- 2005年：Google 地圖
 
-前端不再是后端的模板，可以独立得到各种数据。
+前端不再是後端的模板，可以獨立得到各種資料。
 
 ---
 
 ## Web 2.0
 
-Ajax 技术促成了 Web 2.0 的诞生。
+Ajax 技術促成了 Web 2.0 的誕生。
 
 ![](./images/web20.gif)
 
-- Web 1.0：静态网页，纯内容展示
-- Web 2.0：动态网页，富交互，前端数据处理
+- Web 1.0：靜態網頁，純內容展示
+- Web 2.0：動態網頁，富互動，前端資料處理
 
-从那时起，前端变得复杂了，对前端工程师的要求越来越高。
+從那時起，前端變得複雜了，對前端工程師的要求越來越高。
 
 ---
 
 ## 前端 MVC 框架
 
-前端通过 Ajax 得到数据，因此也有了处理数据的需求。
+前端通過 Ajax 得到資料，因此也有了處理資料的需求。
 
-前端代码变得也需要保存数据、处理数据、生成视图，这导致了前端 MVC 框架的诞生。
+前端程式碼變得也需要儲存資料、處理資料、生成檢視，這導致了前端 MVC 框架的誕生。
 
 - 2010年，Backbone.js
 
@@ -103,10 +103,10 @@ Ajax 技术促成了 Web 2.0 的诞生。
 
 ## Backbone.js
 
-Backbone 将前端代码分成两个基本部分。
+Backbone 將前端程式碼分成兩個基本部分。
 
-- Model：管理数据
-- View：数据的展现
+- Model：管理資料
+- View：資料的展現
 
 ![](./images/backbone-model-view.png)
 
@@ -114,12 +114,12 @@ Backbone 将前端代码分成两个基本部分。
 
 ## 前端 Controller
 
-Backbone 只有 M 和 V，没有 C。因为，前端 Controller 与后端不同。
+Backbone 只有 M 和 V，沒有 C。因為，前端 Controller 與後端不同。
 
-- 不需要，也不应该处理业务逻辑
-- 只需要处理 UI 逻辑，响应用户的一举一动
+- 不需要，也不應該處理業務邏輯
+- 只需要處理 UI 邏輯，響應使用者的一舉一動
 
-所以，前端 Controller 相对比较简单。Backbone 没有 C，只用事件来处理 UI 逻辑。
+所以，前端 Controller 相對比較簡單。Backbone 沒有 C，只用事件來處理 UI 邏輯。
 
 ```javascript
   var AppView = Backbone.View.extend({
@@ -136,9 +136,9 @@ Backbone 只有 M 和 V，没有 C。因为，前端 Controller 与后端不同�
 
 ## Router
 
-前端还有一种天然的方法，可以切换视图，那就是 URL。
+前端還有一種天然的方法，可以切換檢視，那就是 URL。
 
-通过 URL 切换视图，这就是 Router（路由）的作用。以 Backbone 为例。
+通過 URL 切換檢視，這就是 Router（路由）的作用。以 Backbone 為例。
 
 ![](./images/backbone-routing.png)
 
@@ -151,10 +151,10 @@ App.Router = Backbone.Router.extend({
     'show': 'show'
     },
   index: function () {
-    $(document.body).append("调用了 Index 路由");
+    $(document.body).append("呼叫了 Index 路由");
   },
   show: function () {
-    $(document.body).append("调用了 Show 路由");
+    $(document.body).append("呼叫了 Show 路由");
   },
 });
 ```
@@ -162,7 +162,7 @@ App.Router = Backbone.Router.extend({
 
 ## 示例：Backbone Router
 
-打开`demos/backbone-demo/index.html`，按照[《操作说明》](../demos/README.md#backbone)，查看示例。
+開啟`demos/backbone-demo/index.html`，按照[《操作說明》](../demos/README.md#backbone)，檢視示例。
 
 ![](./images/backbone-demo.png)
 
@@ -174,9 +174,9 @@ App.Router = Backbone.Router.extend({
 
 - Model
 - View
-- View-Model：简化的 Controller，唯一作用就是为 View 提供处理好的数据，不含其他逻辑。
+- View-Model：簡化的 Controller，唯一作用就是為 View 提供處理好的資料，不含其他邏輯。
 
-本质：view 绑定 view-model，视图与数据模型强耦合。数据的变化实时反映在 view 上，不需要手动处理。
+本質：view 繫結 view-model，檢視與資料模型強耦合。資料的變化實時反映在 view 上，不需要手動處理。
 
 ![](./images/mvvm.png)
 
@@ -186,27 +186,27 @@ App.Router = Backbone.Router.extend({
 
 前端可以做到：
 
-> - 读写数据
-> - 切换视图
-> - 用户交互
+> - 讀寫資料
+> - 切換檢視
+> - 使用者互動
 
-这意味着，网页其实是一个应用程序。
+這意味著，網頁其實是一個應用程式。
 
 > SPA = Single-page application
 
-2010年后，前端工程师从开发页面，变成了开发”前端应用“（跑在浏览器里面的应用程序）。
+2010年後，前端工程師從開發頁面，變成了開發”前端應用“（跑在瀏覽器裡面的應用程式）。
 
 ---
 
-传统的架构
+傳統的架構
 
 ![](./images/architecture-old.png)
 
-单页应用的架构
+單頁應用的架構
 
 ![](./images/architecture-new.png)
 
-多了一个前端 MVC 层
+多了一個前端 MVC 層
 
 ---
 
@@ -214,15 +214,15 @@ App.Router = Backbone.Router.extend({
 
 Google 公司推出的 Angular 是最流行的 MVVM 前端框架。
 
-它的风格属于 HTML 语言的增强，核心概念是双向绑定。
+它的風格屬於 HTML 語言的增強，核心概念是雙向繫結。
 
 ![](./images/angular.png)
 
 ---
 
-## 示例：Angular 的双向绑定
+## 示例：Angular 的雙向繫結
 
-浏览器打开`demos/angular-demo/index.html`，可以看到一个输入框。
+瀏覽器開啟`demos/angular-demo/index.html`，可以看到一個輸入框。
 
 ![](./images/angular-demo.png)
 
@@ -235,7 +235,7 @@ Google 公司推出的 Angular 是最流行的 MVVM 前端框架。
     <input
       type="text"
       ng-model="name"
-      placeholder="在这里输入您的大名"
+      placeholder="在這裡輸入您的大名"
     >
   </p>
   <h1>你好，{{name}}</h1>
@@ -246,25 +246,25 @@ Google 公司推出的 Angular 是最流行的 MVVM 前端框架。
 
 ## Vue
 
-Vue.js 是现在很热门的一种前端 MVVM 框架。
+Vue.js 是現在很熱門的一種前端 MVVM 框架。
 
-它的基本思想与 Angular 类似，但是用法更简单，而且引入了响应式编程的概念。
+它的基本思想與 Angular 類似，但是用法更簡單，而且引入了響應式程式設計的概念。
 
 ![](./images/vue-logo.png)
 
 ---
 
-## 示例：Vue 的双向绑定
+## 示例：Vue 的雙向繫結
 
-Vue 的模板与数据，是双向绑定的。
+Vue 的模板與資料，是雙向繫結的。
 
-打开`demos/vue-demo/index1.html`，按照[《操作说明》](../demos/README.md#vue)，查看示例。
+開啟`demos/vue-demo/index1.html`，按照[《操作說明》](../demos/README.md#vue)，檢視示例。
 
 ![](./images/vue-demo.png)
 
 ---
 
-HTML 代码
+HTML 程式碼
 
 ```html
 <div id="journal">
@@ -273,7 +273,7 @@ HTML 代码
 </div>
 ```
 
-JS 代码
+JS 程式碼
 
 ```javascript
 var journal = new Vue({
@@ -286,115 +286,114 @@ var journal = new Vue({
 
 ---
 
-## 前后端分离
+## 前後端分離
 
-- Ajax -> 前端应用兴起
-- 智能手机 -> 多终端支持
+- Ajax -> 前端應用興起
+- 智慧手機 -> 多終端支援
 
-这两个原因，导致前端开发方式发生根本的变化。
+這兩個原因，導致前端開發方式發生根本的變化。
 
-前端不再是后端 MVC 中的 V，而是单独的一层。
+前端不再是後端 MVC 中的 V，而是單獨的一層。
 
 ---
 
-## REST 接口
+## REST 介面
 
-前后端分离以后，它们之间通过接口通信。
+前後端分離以後，它們之間通過介面通訊。
 
-后端暴露出接口，前端消费后端提供的数据。
+後端暴露出介面，前端消費後端提供的資料。
 
-后端接口一般是 REST 形式，前后端的通信协议一般是 HTTP。
+後端介面一般是 REST 形式，前後端的通訊協議一般是 HTTP。
 
 ---
 
 ## Node
 
-2009年，Node 项目诞生，它是服务器上的 JavaScript 运行环境。
+2009年，Node 項目誕生，它是伺服器上的 JavaScript 執行環境。
 
-Node = JavaScript + 操作系统 API
+Node = JavaScript + 作業系統 API
 
 ![](./images/node-logo.png)
 
 ---
 
-## Node 的意义
+## Node 的意義
 
-- JavaScript 成为服务器脚本语言，与 Python 和 Ruby 一样
-- JavaScript 成为唯一的浏览器和服务器都支持的语言
-- 前端工程师可以编写后端程序了
-
----
-
-## 前端开发模式的根本改变
-
-- Node 环境下开发
-- 大量使用服务器端工具
-- 引入持续集成等软件工程的标准流程
-- 开发完成后，编译成浏览器可以运行的脚本，放上 CDN
+- JavaScript 成為伺服器指令碼語言，與 Python 和 Ruby 一樣
+- JavaScript 成為唯一的瀏覽器和伺服器都支援的語言
+- 前端工程師可以編寫後端程式了
 
 ---
 
-## 全栈工程师
+## 前端開發模式的根本改變
 
-前端工程师正在转变为全栈工程师
-
-- 一个人负责开发前端和后端
-- 从数据库到 UI 的所有开发
-
----
-
-## 全栈技能
-
-怎样才能称为全栈工程师？
-
-- 传统前端技能：HTML、JavaScript、CSS
-- 一门后端语言
-- 移动端开发：iOS / Android / HTML5
-- 其他技能：数据库、HTTP 等等
+- Node 環境下開發
+- 大量使用伺服器端工具
+- 引入持續整合等軟體工程的標準流程
+- 開發完成後，編譯成瀏覽器可以執行的指令碼，放上 CDN
 
 ---
 
-## 软件行业的发展动力
+## 全棧工程師
 
-历史演变：前后端不分 -> 前后端分离 -> 全栈工程师
+前端工程師正在轉變為全棧工程師
 
-动力：更加产业化、大规模地生产软件
+- 一個人負責開發前端和後端
+- 從資料庫到 UI 的所有開發
+
+---
+
+## 全棧技能
+
+怎樣才能稱為全棧工程師？
+
+- 傳統前端技能：HTML、JavaScript、CSS
+- 一門後端語言
+- 移動端開發：iOS / Android / HTML5
+- 其他技能：資料庫、HTTP 等等
+
+---
+
+## 軟體行業的發展動力
+
+歷史演變：前後端不分 -> 前後端分離 -> 全棧工程師
+
+動力：更加產業化、大規模地生產軟體
 
 - 效率更高
 - 成本更低
 
-通用性好、能够快速产出的技术最终会赢，单个程序员的生产力要求越来越高。
+通用性好、能夠快速產出的技術最終會贏，單個程式設計師的生產力要求越來越高。
 
 ---
 
-## H5 就是一个最好的例子
+## H5 就是一個最好的例子
 
-为什么 H5 技术会赢得移动端？
+為什麼 H5 技術會贏得移動端？
 
-- 开发速度快：Native 需要重新编译才能看到结果，H5 是即时输出
-- 开发成本低：Native 需要两个开发团队，H5 只要一个
-- 快速发布：安卓 Native 新版本需要24小时，iOS 需要 3 ～ 4 天，H5 可以随时更新
-
----
-
-## 未来软件的特点
-
-- 联网
-- 高并发
-- 分布式
-- 跨终端
-
-现在基于 Web 的前端技术，将演变为未来所有软件的通用的 GUI 解决方案。
+- 開發速度快：Native 需要重新編譯才能看到結果，H5 是即時輸出
+- 開發成本低：Native 需要兩個開發團隊，H5 只要一個
+- 快速釋出：安卓 Native 新版本需要24小時，iOS 需要 3 ～ 4 天，H5 可以隨時更新
 
 ---
 
-## 未来只有两种软件工程师
+## 未來軟體的特點
 
-- 端工程师
-  - 手机端
+- 聯網
+- 高併發
+- 分散式
+- 跨終端
+
+現在基於 Web 的前端技術，將演變為未來所有軟體的通用的 GUI 解決方案。
+
+---
+
+## 未來只有兩種軟體工程師
+
+- 端工程師
+  - 手機端
   - PC 端
   - TV 端
   - VR 端
   - ……
-- 云工程师
-
+- 雲工程師

@@ -1,48 +1,48 @@
-# 培训准备
+# 培訓準備
 
-参加培训的学员，事先应该做好以下准备工作。
+參加培訓的學員，事先應該做好以下準備工作。
 
-## 知识准备
+## 知識準備
 
 - 掌握 HTML、CSS、JS 的基本用法
-- 掌握命令行的基本用法
+- 掌握命令列的基本用法
 
-## 安装 Git
+## 安裝 Git
 
-请到官网 [git-scm.com](https://git-scm.com/) 或国内的下载站，下载安装包。
+請到官網 [git-scm.com](https://git-scm.com/) 或國內的下載站，下載安裝包。
 
-## 安装 Node
+## 安裝 Node
 
-请到 Node 官网[nodejs.org](https://nodejs.org)，或者国内镜像[npm.taobao.org/mirrors/node](https://npm.taobao.org/mirrors/node)，下载安装包。推荐安装最新的稳定版，目前是v6.x。
+請到 Node 官網[nodejs.org](https://nodejs.org)，或者國內映象[npm.taobao.org/mirrors/node](https://npm.taobao.org/mirrors/node)，下載安裝包。推薦安裝最新的穩定版，目前是v6.x。
 
-安装完成后，命令行执行下面的命令，确认是否安装成功。
+安裝完成後，命令列執行下面的命令，確認是否安裝成功。
 
 ```bash
 $ node -v
 v6.9.1
 ```
 
-Node 的模块管理器 npm 会一起安装好。由于 Node 的官方模块仓库网速太慢，模块仓库需要切换到阿里的源。
+Node 的模組管理器 npm 會一起安裝好。由於 Node 的官方模組倉庫網速太慢，模組倉庫需要切換到阿里的源。
 
 ```bash
 $ npm config set registry https://registry.npm.taobao.org/
 ```
 
-执行下面的命令，确认是否切换成功。
+執行下面的命令，確認是否切換成功。
 
 ```bash
 $ npm config get registry
 ```
 
-## 安装 Postman
+## 安裝 Postman
 
-Postman 是一个 HTTP 通信测试工具，REST API 的练习会用到它。
+Postman 是一個 HTTP 通訊測試工具，REST API 的練習會用到它。
 
-请到官网 [GetPostman.com](https://www.getpostman.com/) 下载独立安装包；也可以参考这篇文章[www.cnblogs.com/mafly/p/postman.html](http://www.cnblogs.com/mafly/p/postman.html)，下载 Chrome 浏览器的插件，它们的效果一样。
+請到官網 [GetPostman.com](https://www.getpostman.com/) 下載獨立安裝包；也可以參考這篇文章[www.cnblogs.com/mafly/p/postman.html](http://www.cnblogs.com/mafly/p/postman.html)，下載 Chrome 瀏覽器的外掛，它們的效果一樣。
 
-## 安装示例库
+## 安裝示例庫
 
-所有的讲义和练习源码，都是开源的，网址是 [github.com/ruanyf/jstraining](https://github.com/ruanyf/jstraining)。执行下面的命令，将这个库拷贝到你的硬盘上。
+所有的講義和練習源碼，都是開源的，網址是 [github.com/ruanyf/jstraining](https://github.com/ruanyf/jstraining)。執行下面的命令，將這個庫拷貝到你的硬碟上。
 
 ```bash
 # Linux & Mac
@@ -52,5 +52,4 @@ $ git clone git@github.com:ruanyf/jstraining.git
 $ git clone https://github.com/ruanyf/jstraining.git
 ```
 
-如果因为种种原因，Git 命令行无法使用，也可以直接下载压缩包，地址是 https://github.com/ruanyf/jstraining/archive/master.zip 。
-
+如果因為種種原因，Git 命令列無法使用，也可以直接下載壓縮包，地址是 https://github.com/ruanyf/jstraining/archive/master.zip 。

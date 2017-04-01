@@ -1,26 +1,26 @@
-# 课堂练习的操作指导
+# 課堂練習的操作指導
 
-## 目录
+## 目錄
 
-- 前端开发的历史和趋势
+- 前端開發的歷史和趨勢
   - [Backbone](#backbone)
   - [Angular](#angular)
   - [Vue](#vue)
-- React 技术栈
+- React 技術棧
   - [JSX](#jsx)
-  - [React 组件语法](#react-组件语法)
-  - [React 组件的参数](#react-组件的参数)
-  - [React 组件的状态](#react-组件的状态)
-  - [React 组件实战](#react-组件实战)
-  - [React 组件的生命周期](#react-组件的生命周期)
+  - [React 元件語法](#react-元件語法)
+  - [React 元件的參數](#react-元件的參數)
+  - [React 元件的狀態](#react-元件的狀態)
+  - [React 元件實戰](#react-元件實戰)
+  - [React 元件的生命週期](#react-元件的生命週期)
   - [ReCharts](#recharts)
   - [MobX](#mobx)
   - [Redux](#redux)
-- Node 开发
+- Node 開發
   - [Simple App](#simple-app)
   - [REST API](#rest-api)
   - [Express](#express)
-- 前端工程简介
+- 前端工程簡介
   - [ESLint](#eslint)
   - [Mocha](#mocha)
   - [Nightmare](#nightmare)
@@ -28,122 +28,122 @@
 
 ## Backbone
 
-### 实验目的
+### 實驗目的
 
-1. 理解前端框架的路由组件（`router`）的作用
+1. 理解前端框架的路由元件（`router`）的作用
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开[`demos/backbone-demo/index.html`](./backbone-demo/index.html)
-1. 点击页面上的链接，注意浏览器 URL 的变化
-1. 仔细查看[`js/main.js`](./backbone-demo/js/main.js)的源码，看懂 Router 组件的使用方式
+1. 瀏覽器開啟[`demos/backbone-demo/index.html`](./backbone-demo/index.html)
+1. 點選頁面上的連結，注意瀏覽器 URL 的變化
+1. 仔細檢視[`js/main.js`](./backbone-demo/js/main.js)的源碼，看懂 Router 元件的使用方式
 
 ## Angular
 
-### 实验目的
+### 實驗目的
 
-1. 理解 Angular 的双向绑定机制
+1. 理解 Angular 的雙向繫結機制
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开[`demos/angular-demo/index.html`](./angular-demo/index.html)
-1. 在输入框填入内容，注意页面变化
-1. 查看[`index.html`](./angular-demo/index.html)的源码，理解 Angular 对 HTML 标签的增强
+1. 瀏覽器開啟[`demos/angular-demo/index.html`](./angular-demo/index.html)
+1. 在輸入框填入內容，注意頁面變化
+1. 檢視[`index.html`](./angular-demo/index.html)的源碼，理解 Angular 對 HTML 標籤的增強
 
 ## Vue
 
-### 实验目的
+### 實驗目的
 
-1. 理解 Vue 的模板与数据的双向绑定
+1. 理解 Vue 的模板與資料的雙向繫結
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开[`demos/vue-demo/index1.html`](./vue-demo/index1.html)
-1. 在输入框填入内容，注意页面变化
-1. 查看[`app1.js`](./vue-demo/app1.js)，理解 Vue 组件的基本写法
+1. 瀏覽器開啟[`demos/vue-demo/index1.html`](./vue-demo/index1.html)
+1. 在輸入框填入內容，注意頁面變化
+1. 檢視[`app1.js`](./vue-demo/app1.js)，理解 Vue 元件的基本寫法
 
-### 注意事项
+### 注意事項
 
-1. [`index2.html`](./vue-demo/index2.html)是一个稍微复杂的例子，模板如何绑定数据对象的一个字段。
-2. [`index3.html`](./vue-demo/index3.html)是事件绑定模板的例子。
+1. [`index2.html`](./vue-demo/index2.html)是一個稍微複雜的例子，模板如何繫結資料物件的一個欄位。
+2. [`index3.html`](./vue-demo/index3.html)是事件繫結模板的例子。
 
 ## JSX
 
-### 实验目的
+### 實驗目的
 
-1. 掌握 JSX 基本语法
+1. 掌握 JSX 基本語法
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开`demos/jsx-demo/index.html`，仔细查看源码。
+1. 瀏覽器開啟`demos/jsx-demo/index.html`，仔細檢視源碼。
 
-### 注意事项
+### 注意事項
 
-1. `ReactDOM.render`方法接受两个参数：一个虚拟 DOM 节点和一个真实 DOM 节点，作用是将虚拟 DOM 挂载到真实 DOM。
+1. `ReactDOM.render`方法接受兩個參數：一個虛擬 DOM 節點和一個真實 DOM 節點，作用是將虛擬 DOM 掛載到真實 DOM。
 
-### 练习
+### 練習
 
-1. 修改源码，将显示文字变为 ”Hello React!“。
+1. 修改源碼，將顯示文字變為 ”Hello React!“。
 
-## React 组件语法
+## React 元件語法
 
-### 实验目的
+### 實驗目的
 
-1. 掌握 React 组件的基本写法
+1. 掌握 React 元件的基本寫法
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开`demos/react-component-demo/index1.html`，仔细查看源码。
+1. 瀏覽器開啟`demos/react-component-demo/index1.html`，仔細檢視源碼。
 
-### 注意事项
+### 注意事項
 
-1. `class MyTitle extends React.Component`是 ES6 语法，表示自定义一个`MyTitle`类，该类继承了基类`React.Component`的所有属性和方法。
-1. React 规定，自定义组件的第一个字母必须大写，比如`MyTitle`不能写成`myTitle`，以便与内置的原生类相区分。
-1. 每个组件都必须有`render`方法，定义输出的样式。
-1. `<MyTitle/>`表示生成一个组件类的实例，每个实例一定要有闭合标签，写成`<MyTilte></MyTitle>`也可。
+1. `class MyTitle extends React.Component`是 ES6 語法，表示自定義一個`MyTitle`類，該類繼承了基類`React.Component`的所有屬性和方法。
+1. React 規定，自定義元件的第一個字母必須大寫，比如`MyTitle`不能寫成`myTitle`，以便與內建的原生類相區分。
+1. 每個元件都必須有`render`方法，定義輸出的樣式。
+1. `<MyTitle/>`表示生成一個元件類的例項，每個例項一定要有閉合標籤，寫成`<MyTilte></MyTitle>`也可。
 
-## React 组件的参数
+## React 元件的參數
 
-### 实验目的
+### 實驗目的
 
-1. 学会向 React 组件传参数
+1. 學會向 React 元件傳參數
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开`demos/react-component-demo/index2.html`，仔细查看源码。
+1. 瀏覽器開啟`demos/react-component-demo/index2.html`，仔細檢視源碼。
 
-### 注意事项
+### 注意事項
 
-1. 组件内部通过`this.props`对象获取参数。
+1. 元件內部通過`this.props`物件獲取參數。
 
-### 练习
+### 練習
 
-1. 将组件的颜色，从红色（`red`）换成黄色（`yellow`）。
+1. 將元件的顏色，從紅色（`red`）換成黃色（`yellow`）。
 
-## React 组件的状态
+## React 元件的狀態
 
-### 实验目的
+### 實驗目的
 
-1. 学会通过状态变动，引发组件的重新渲染。
+1. 學會通過狀態變動，引發元件的重新渲染。
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开`demos/react-component-demo/index3.html`，仔细查看源码。
+1. 瀏覽器開啟`demos/react-component-demo/index3.html`，仔細檢視源碼。
 
-### 注意事项
+### 注意事項
 
 ```javascript
   class MyTitle extends React.Component {
-    constructor(...args) {
+    function Object() { [native code] }(...args) {
       super(...args);
       this.state = {
-        name: '访问者'
+        name: '訪問者'
       };
     }
     // ...
 ```
 
-`constructor`是组件的构造函数，会在创建实例时自动调用。`...args`表示组件参数，`super(...args)`是 ES6 规定的写法。`this.state`对象用来存放内部状态，这里是定义初始状态。
+`function Object() { [native code] }`是元件的建構函式，會在建立例項時自動呼叫。`...args`表示元件參數，`super(...args)`是 ES6 規定的寫法。`this.state`物件用來存放內部狀態，這裡是定義初始狀態。
 
 ```html
 <div>
@@ -155,7 +155,7 @@
 </div>;
 ```
 
-`this.state.name`表示读取`this.state`的`name`属性。每当输入框有变动，就会自动调用`onChange`指定的监听函数，这里是`this.handleChange`，`.bind(this)`表示该方法内部的`this`，绑定当前组件。
+`this.state.name`表示讀取`this.state`的`name`屬性。每當輸入框有變動，就會自動呼叫`onChange`指定的監聽函數，這裡是`this.handleChange`，`.bind(this)`表示該方法內部的`this`，繫結當前元件。
 
 ```javascript
 handleChange(e) {
@@ -166,37 +166,37 @@ handleChange(e) {
 }
 ```
 
-`this.setState`方法用来重置`this.state`，每次调用这个方法，就会引发组件的重新渲染。
+`this.setState`方法用來重置`this.state`，每次呼叫這個方法，就會引發元件的重新渲染。
 
-## React 组件实战
+## React 元件實戰
 
-### 实验目的
+### 實驗目的
 
-1. 学会自己写简单的 React 组件。
+1. 學會自己寫簡單的 React 元件。
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开`demos/react-component-demo/index4.html`。
-1. 点击`Hello World`，看看会发生什么。
+1. 瀏覽器開啟`demos/react-component-demo/index4.html`。
+1. 點選`Hello World`，看看會發生什麼。
 
-### 练习
+### 練習
 
-1. 修改源码，使得点击`Hello World`后，会显示当前的日期，比如`Hello 2016年1月1日`。
+1. 修改源碼，使得點選`Hello World`後，會顯示當前的日期，比如`Hello 2016年1月1日`。
 
-2. 请在上一步练习的基础上，进一步修改。现在`Hello World`点击一次，会改变内容，再点击就不会有反应了。请将其改成，再点击一次变回原样。
+2. 請在上一步練習的基礎上，進一步修改。現在`Hello World`點選一次，會改變內容，再點選就不會有反應了。請將其改成，再點選一次變回原樣。
 
 ### 提示
 
- 练习一、下面的代码可以得到当前日期。
+ 練習一、下面的程式碼可以得到當前日期。
 
 ```javascript
 var d = new Date();
-d.getFullYear() // 当前年份
-d.getMonth() + 1 // 当前月份
-d.getDate() // 当前是每个月的几号
+d.getFullYear() // 當前年份
+d.getMonth() + 1 // 當前月份
+d.getDate() // 當前是每個月的幾號
 ```
 
-练习二、可以在`this.state`里面设置一个开关变量`isClicked`。
+練習二、可以在`this.state`裡面設定一個開關變數`isClicked`。
 
 ```javascript
 this.state = {
@@ -205,7 +205,7 @@ this.state = {
 };
 ```
 
-然后，在`this.handleClick`方法里面，做一个`toggle`效果。
+然後，在`this.handleClick`方法裡面，做一個`toggle`效果。
 
 ```javascript
 let isClicked = !this.state.isClicked;
@@ -215,18 +215,18 @@ this.setState({
 });
 ```
 
-## React 组件的生命周期
+## React 元件的生命週期
 
-### 实验目的
+### 實驗目的
 
-1. 掌握钩子方法的基本用法
-1. 掌握组件如何通过 Ajax 请求获取数据，并对数据进行处理
+1. 掌握鉤子方法的基本用法
+1. 掌握元件如何通過 Ajax 請求獲取資料，並對資料進行處理
 
-### 操作步骤
+### 操作步驟
 
-1. 打开`demos/react-lifecycle-demo/index.html`，仔细查看源码。
+1. 開啟`demos/react-lifecycle-demo/index.html`，仔細檢視源碼。
 
-### 注意事项
+### 注意事項
 
 ```javascript
 componentDidMount() {
@@ -237,30 +237,30 @@ componentDidMount() {
 }
 ```
 
-- `componentDidMount`方法在组件加载后执行，只执行一次。本例在这个方法里向服务器请求数据，操作结束前，组件都显示`Loading`。
-- `$.getJSON`方法用于向服务器请求 JSON 数据。本例的数据从 Github API 获取，可以打开源码里面的链接，看看原始的数据结构。
+- `componentDidMount`方法在元件載入後執行，只執行一次。本例在這個方法裡向伺服器請求資料，操作結束前，元件都顯示`Loading`。
+- `$.getJSON`方法用於向伺服器請求 JSON 資料。本例的資料從 Github API 獲取，可以開啟源碼裡面的連結，看看原始的資料結構。
 
-### 练习
+### 練習
 
-1. 本例的 JSON 数据是 Github 上面最受欢迎的 JavaScript 项目。请在网页上显示一个列表，列出这些项目。
+1. 本例的 JSON 資料是 Github 上面最受歡迎的 JavaScript 項目。請在網頁上顯示一個列表，列出這些項目。
 
 ### 提示
 
-（1） `this.state.loading`记录数据加载是否结束。只要数据请求没有结束，`this.state.loading`就一直是`true`，网页上显示`loading`。
+（1） `this.state.loading`記錄資料載入是否結束。只要資料請求沒有結束，`this.state.loading`就一直是`true`，網頁上顯示`loading`。
 
-（2） `this.state.error`保存数据请求失败时的错误信息。如果请求失败，`this.state.error`就是返回的错误对象，网页上显示报错信息。
+（2） `this.state.error`儲存資料請求失敗時的錯誤資訊。如果請求失敗，`this.state.error`就是返回的錯誤物件，網頁上顯示報錯資訊。
 
-（3） `this.state.data`保存从服务器获取的数据。如果请求成功，可以先用`console.log`方法，将它在控制台里打印出来，看看数据结构。
+（3） `this.state.data`儲存從伺服器獲取的資料。如果請求成功，可以先用`console.log`方法，將它在控制檯裡列印出來，看看資料結構。
 
 ```javascript
 render() {
-  // 加一行打印命令，看看数据结构
+  // 加一行列印命令，看看資料結構
   console.log(this.state.data);
   return {
   // ...
 ```
 
-（4） `this.state.data`里面的`this.state.data.items`应该是一个数组，保存着每个项目的具体信息。可以使用`forEach`方法进行遍历处理。
+（4） `this.state.data`裡面的`this.state.data.items`應該是一個陣列，儲存著每個項目的具體資訊。可以使用`forEach`方法進行遍歷處理。
 
 ```javascript
 var projects = this.state.data.items;
@@ -271,7 +271,7 @@ projects.forEach(p => {
 });
 ```
 
-（5）然后，将上一步的`results`插入网页即可。
+（5）然後，將上一步的`results`插入網頁即可。
 
 ```javascript
 <div>
@@ -281,34 +281,34 @@ projects.forEach(p => {
 
 ## ReCharts
 
-### 实验目的
+### 實驗目的
 
-1. 了解如何使用第三方组件库。
+1. 瞭解如何使用第三方元件庫。
 
-### 操作步骤
+### 操作步驟
 
-1. 浏览器打开`demos/recharts-demo/index.html`，查看效果。
+1. 瀏覽器開啟`demos/recharts-demo/index.html`，檢視效果。
 
 ## MobX
 
-### 实验目的
+### 實驗目的
 
 1. 理解 MobX 框架
 
-### 操作步骤
+### 操作步驟
 
-（1）浏览器打开`demos/mobx-demo/browser-demo/index.html`，仔细查看源码
+（1）瀏覽器開啟`demos/mobx-demo/browser-demo/index.html`，仔細檢視源碼
 
-（2） 命令行进入`demos/mobx-demo/`目录，执行如下的命令。
+（2） 命令列進入`demos/mobx-demo/`目錄，執行如下的命令。
 
 ```bash
 $ npm install
 $ npm start
 ```
 
-（3） 打开浏览器，访问 http://localhost:8080，查看结果，并仔细研究`app/`目录下面的代码。
+（3） 開啟瀏覽器，訪問 http://localhost:8080，檢視結果，並仔細研究`app/`目錄下面的程式碼。
 
-### 注意事项
+### 注意事項
 
 ```javascript
 @observer
@@ -319,9 +319,9 @@ class App extends React.Component {
 }
 ```
 
-`@observer`是一种新的语法，叫做“装饰器”，表示对整个类的行为进行修改，即将`App`类作为参数传入`observer`函数。这里的意思是，整个`App`类都是一个“观察者”，观察`store`的变化，只要一有变化，立刻重新渲染。
+`@observer`是一種新的語法，叫做“裝飾器”，表示對整個類的行為進行修改，即將`App`類作為參數傳入`observer`函數。這裡的意思是，整個`App`類都是一個“觀察者”，觀察`store`的變化，只要一有變化，立刻重新渲染。
 
-数据保存在`Store`里面。`Store`的属性分成两种：被观察的属性（`@observable`），和自动计算得到的属性`@computed`。
+資料儲存在`Store`裡面。`Store`的屬性分成兩種：被觀察的屬性（`@observable`），和自動計算得到的屬性`@computed`。
 
 ```javascript
 class Store {
@@ -332,7 +332,7 @@ class Store {
 }
 ```
 
-`Store`的变化由用户引发。组件观察到`Store`的变化，自动重新渲染。
+`Store`的變化由使用者引發。元件觀察到`Store`的變化，自動重新渲染。
 
 ```javascript
 <p>
@@ -349,24 +349,24 @@ class Store {
 
 ## Redux
 
-### 实验目的
+### 實驗目的
 
-1. 理解 Redux 架构
+1. 理解 Redux 架構
 
-### 操作步骤
+### 操作步驟
 
-（1） 命令行下进入`demos/redux-demo`目录，执行如下的命令。
+（1） 命令列下進入`demos/redux-demo`目錄，執行如下的命令。
 
 ```bash
 $ npm install
 $ npm start
 ```
 
-（2）打开浏览器，访问 http://localhost:8080，查看结果，并仔细研究代码。
+（2）開啟瀏覽器，訪問 http://localhost:8080，檢視結果，並仔細研究程式碼。
 
-### 注意事项
+### 注意事項
 
-（1） Redux 要求 UI 的渲染组件都是纯组件，即不包含任何状态（`this.state`）的组件。
+（1） Redux 要求 UI 的渲染元件都是純元件，即不包含任何狀態（`this.state`）的元件。
 
 ```javascript
 <div className="index">
@@ -378,17 +378,17 @@ $ npm start
 </div>
 ```
 
-（2） 进行数据处理、并包含状态的组件，称为”容器组件“。Redux 使用`connect`方法，自动生成 UI 组件对应的”容器组件“。
+（2） 進行資料處理、幷包含狀態的元件，稱為”容器元件“。Redux 使用`connect`方法，自動生成 UI 元件對應的”容器元件“。
 
 ```javascript、
-// MyComponent 是纯的 UI 组件
+// MyComponent 是純的 UI 元件
 const App = connect(
   mapStateToProps,
   mapDispatchToProps
 )(MyComponent);
 ```
 
-（3） `mapStateToProps`函数返回一个对象，表示一种映射关系，将 UI 组件的参数映射到`state`。
+（3） `mapStateToProps`函數返回一個物件，表示一種對映關係，將 UI 元件的參數對映到`state`。
 
 ```javascript
 function mapStateToProps(state) {
@@ -399,7 +399,7 @@ function mapStateToProps(state) {
 }
 ```
 
-（4） `mapDispatchToProps`函数也是返回一个对象，表示一种映射关系，但定义的是哪些用户的操作应该当作`Action`，传给`Store`。
+（4） `mapDispatchToProps`函數也是返回一個物件，表示一種對映關係，但定義的是哪些使用者的操作應該當作`Action`，傳給`Store`。
 
 ```javascript
 function mapDispatchToProps(dispatch) {
@@ -412,12 +412,12 @@ function mapDispatchToProps(dispatch) {
 }
 ```
 
-（5） `reducer`函数用来接收`action`，算出新的`state`。
+（5） `reducer`函數用來接收`action`，算出新的`state`。
 
 ```javascript
 function reducer(state = {
-  text: '你好，访问者',
-  name: '访问者'
+  text: '你好，訪問者',
+  name: '訪問者'
 }, action) {
   switch (action.type) {
     case 'change':
@@ -429,7 +429,7 @@ function reducer(state = {
 }
 ```
 
-`Store`由 Redux 提供的`createStore`方法生成，该方法接受`reducer`作为参数。
+`Store`由 Redux 提供的`createStore`方法生成，該方法接受`reducer`作為參數。
 
 ```javascript
 const store = createStore(reducer);
@@ -442,41 +442,41 @@ ReactDOM.render(
 );
 ```
 
-为了把`Store`传入组件，必须使用 Redux 提供的`Provider`组件在应用的最外面，包裹一层。
+為了把`Store`傳入元件，必須使用 Redux 提供的`Provider`元件在應用的最外面，包裹一層。
 
 ## Simple App
 
-### 实验目的
+### 實驗目的
 
-1. 学会使用 Node 编写简单的前端应用。
+1. 學會使用 Node 編寫簡單的前端應用。
 
-### 操作步骤
+### 操作步驟
 
-（1）新建一个目录
+（1）新建一個目錄
 
 ```bash
 $ mkdir simple-app-demo
 $ cd simple-app-demo
 ```
 
-（2）在该目录下，新建一个`package.json`文件。
+（2）在該目錄下，新建一個`package.json`檔案。
 
 ```bash
 $ npm init -y
 ```
 
-`package.json`是项目的配置文件。
+`package.json`是項目的配置檔案。
 
-（3）安装`jquery`和`webpack`这两个模块。
+（3）安裝`jquery`和`webpack`這兩個模組。
 
 ```bash
 $ npm install -S jquery
 $ npm install -S webpack
 ```
 
-打开`package.json`文件，会发现`jquery`和`webpack`都加入了`dependencies`字段，并且带有版本号。
+開啟`package.json`檔案，會發現`jquery`和`webpack`都加入了`dependencies`欄位，並且帶有版本號。
 
-（4）在项目根目录下，新建一个网页文件`index.html`。
+（4）在項目根目錄下，新建一個網頁檔案`index.html`。
 
 ```html
 <html>
@@ -487,16 +487,16 @@ $ npm install -S webpack
 </html>
 ```
 
-（5）在项目根目录下，新建一个脚本文件`app.js`。
+（5）在項目根目錄下，新建一個指令碼檔案`app.js`。
 
 ```javascript
 const $ = require('jquery');
 $('h1').css({ color: 'red'});
 ```
 
-上面代码中，`require`方法是 Node 特有的模块加载命令。
+上面程式碼中，`require`方法是 Node 特有的模組載入命令。
 
-（6）打开`package.json`，在`scripts`字段里面，添加一行。
+（6）開啟`package.json`，在`scripts`欄位裡面，新增一行。
 
 ```javascript
 "scripts": {
@@ -505,35 +505,35 @@ $('h1').css({ color: 'red'});
 },
 ```
 
-（7） 在项目根目录下，执行下面的命令，将脚本打包。
+（7） 在項目根目錄下，執行下面的命令，將指令碼打包。
 
 ```bash
 $ npm run build
 ```
 
-执行完成，可以发现项目根目录下，新生成了一个文件`bundle.js`。
+執行完成，可以發現項目根目錄下，新生成了一個檔案`bundle.js`。
 
-（8）浏览器打开`index.html`，可以发现`Hello World`变成了红色。
+（8）瀏覽器開啟`index.html`，可以發現`Hello World`變成了紅色。
 
-### 练习
+### 練習
 
-1. 修改样式，将标题变为蓝色，然后重新编译生成打包文件。
+1. 修改樣式，將標題變為藍色，然後重新編譯生成打包檔案。
 
 ## REST API
 
-### 实验目的
+### 實驗目的
 
 1. 熟悉 REST API 的基本用法
 
-### 操作步骤
+### 操作步驟
 
-（1） 命令行进入`demos/rest-api-demo`目录，执行下面的命令。
+（1） 命令列進入`demos/rest-api-demo`目錄，執行下面的命令。
 
 ```bash
 $ npm install -S json-server
 ```
 
-（2） 在项目根目录下，新建一个 JSON 文件`db.json`。
+（2） 在項目根目錄下，新建一個 JSON 檔案`db.json`。
 
 ```javascript
 {
@@ -547,7 +547,7 @@ $ npm install -S json-server
 }
 ```
 
-（3） 打开`package.json`，在`scripts`字段添加一行。
+（3） 開啟`package.json`，在`scripts`欄位新增一行。
 
 ```javascript
 "scripts": {
@@ -556,58 +556,58 @@ $ npm install -S json-server
 },
 ```
 
-（4） 命令行下执行下面的命令，启动服务。
+（4） 命令列下執行下面的命令，啟動服務。
 
 ```bash
 $ npm run server
 ```
 
-（5）打开 Chrome 浏览器的 Postman 应用。依次向`http://127.0.0.1:3000/posts`、`http://127.0.0.1:3000/posts/1`发出`GET`请求，查看结果。
+（5）開啟 Chrome 瀏覽器的 Postman 應用。依次向`http://127.0.0.1:3000/posts`、`http://127.0.0.1:3000/posts/1`發出`GET`請求，檢視結果。
 
-（6）向`http://127.0.0.1:3000/comments`发出`POST`请求。注意，数据体`Body`要选择`x-www-form-urlencoded`编码，然后依次添加下面两个字段。
+（6）向`http://127.0.0.1:3000/comments`發出`POST`請求。注意，資料體`Body`要選擇`x-www-form-urlencoded`編碼，然後依次新增下面兩個欄位。
 
 ```javascript
 body: "hello world"
 postId: 1
 ```
 
-发出该请求后，再向`http://127.0.0.1:3000/comments`发出`GET`请求，查看结果。
+發出該請求後，再向`http://127.0.0.1:3000/comments`發出`GET`請求，檢視結果。
 
-（7） 向`http://127.0.0.1:3000/comments/2`发出`PUT`请求，数据体`Body`要选择`x-www-form-urlencoded`编码，然后添加下面的字段。
+（7） 向`http://127.0.0.1:3000/comments/2`發出`PUT`請求，資料體`Body`要選擇`x-www-form-urlencoded`編碼，然後新增下面的欄位。
 
 ```javascript
 body: "hello react"
 ```
 
-发出该请求后，再向`http://127.0.0.1:3000/comments`发出`GET`请求，查看结果。
+發出該請求後，再向`http://127.0.0.1:3000/comments`發出`GET`請求，檢視結果。
 
-（8）向`http://127.0.0.1:3000/comments/2`发出`delete`请求。
+（8）向`http://127.0.0.1:3000/comments/2`發出`delete`請求。
 
-发出该请求后，再向`http://127.0.0.1:3000/comments`发出`GET`请求，查看结果。
+發出該請求後，再向`http://127.0.0.1:3000/comments`發出`GET`請求，檢視結果。
 
 ## Express
 
-### 实验目的
+### 實驗目的
 
-1. 学会 Express 搭建 Web 应用的基本用法。
+1. 學會 Express 搭建 Web 應用的基本用法。
 
-### 操作步骤
+### 操作步驟
 
-（1）进入`demos/express-demo`目录，命令行执行下面的命令，安装依赖。
+（1）進入`demos/express-demo`目錄，命令列執行下面的命令，安裝依賴。
 
 ```bash
 $ cd demos/express-demo
 $ npm install
 ```
 
-（2）打开`app1.js`，尝试看懂这个脚本。
+（2）開啟`app1.js`，嘗試看懂這個指令碼。
 
 ```javascript
 var express    = require('express');
 var app        = express();
 ```
 
-上面代码调用`express`，生成一个 Web 应用的实例。
+上面程式碼呼叫`express`，生成一個 Web 應用的例項。
 
 ```javascript
 var router = express.Router();
@@ -619,9 +619,9 @@ router.get('/', function(req, res) {
 app.use('/home', router);
 ```
 
-上面代码新建了一个路由对象，该对象指定访问根路由（`/`）时，返回`Hello World`。然后，将该路由加载在`/home`路径，也就是说，访问`/home`会返回`Hello World`。
+上面程式碼新建了一個路由物件，該物件指定訪問根路由（`/`）時，返回`Hello World`。然後，將該路由載入在`/home`路徑，也就是說，訪問`/home`會返回`Hello World`。
 
-`router.get`方法的第二个参数是一个回调函数，当符合指定路由的请求进来，会被这个函数处理。该函数的两个参数，`req`和`res`都是Express 内置的对象，分别表示用户的请求和 Web 服务器的回应。`res.send`方法就表示服务器回应所送出的内容。
+`router.get`方法的第二個參數是一個回撥函數，當符合指定路由的請求進來，會被這個函數處理。該函數的兩個參數，`req`和`res`都是Express 內建的物件，分別表示使用者的請求和 Web 伺服器的迴應。`res.send`方法就表示伺服器迴應所送出的內容。
 
 ```javascript
 var port = process.env.PORT || 8080;
@@ -630,21 +630,21 @@ app.listen(port);
 console.log('Magic happens on port ' + port);
 ```
 
-上面代码指定了外部访问的端口，如果环境变量没有指定，则端口默认为`8080`。最后两行是启动应用，并输出一行提示文字。
+上面程式碼指定了外部訪問的埠，如果環境變數沒有指定，則埠預設為`8080`。最後兩行是啟動應用，並輸出一行提示文字。
 
-（3）在命令行下，启动这个应用。
+（3）在命令列下，啟動這個應用。
 
 ```bash
 $ node app1.js
 ```
 
-浏览器访问`localhost:8080/home`，看看是否输出`Hello World`。
+瀏覽器訪問`localhost:8080/home`，看看是否輸出`Hello World`。
 
-然后，命令行下按 Ctrl + C，退出这个进程。
+然後，命令列下按 Ctrl + C，退出這個程序。
 
-（4）通过环境变量，自定义启动端口。
+（4）通過環境變數，自定義啟動埠。
 
-假定我们指定必须启动在`7070`端口，命令行可以这样操作。
+假定我們指定必須啟動在`7070`埠，命令列可以這樣操作。
 
 ```bash
 # Linux & Mac
@@ -655,13 +655,13 @@ $ set PORT=7070
 $ node app1.js
 ```
 
-浏览器就可以访问`localhost:7070/home`了。
+瀏覽器就可以訪問`localhost:7070/home`了。
 
-然后，命令行下按 Ctrl + C，退出这个进程。
+然後，命令列下按 Ctrl + C，退出這個程序。
 
-思考题：Node 应用能否直接在`80`端口启动？
+思考題：Node 應用能否直接在`80`埠啟動？
 
-（5）打开`app2.js`，查看新增的那个路由。
+（5）開啟`app2.js`，檢視新增的那個路由。
 
 ```javascript
 router.get('/:name', function(req, res) {
@@ -669,34 +669,34 @@ router.get('/:name', function(req, res) {
 });
 ```
 
-上面代码新增了一个路由，这个路由的路径是一个命名参数`:name`，可以从`req.params.name`拿到这个传入的参数。
+上面程式碼新增了一個路由，這個路由的路徑是一個命名參數`:name`，可以從`req.params.name`拿到這個傳入的參數。
 
-在命令行下，启动这个应用。
+在命令列下，啟動這個應用。
 
 ```bash
 $ node app2.js
 ```
 
-浏览器访问`localhost:8080/home/张三`，看看是否输出`Hello 张三`。
+瀏覽器訪問`localhost:8080/home/張三`，看看是否輸出`Hello 張三`。
 
-然后，命令行下按 Ctrl + C，退出这个进程。
+然後，命令列下按 Ctrl + C，退出這個程序。
 
-（6）打开`app3.js`，先查看页面头部新增的两行代码。
+（6）開啟`app3.js`，先檢視頁面頭部新增的兩行程式碼。
 
 ```javascript
 var express    = require('express');
 var app        = express();
 
-// 新增代码...
+// 新增程式碼...
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // ...
 ```
 
-上面代码中，`body-parser`模块的作用，是对`POST`、`PUT`、`DELETE`等 HTTP 方法的数据体进行解析。`app.use`用来将这个模块加载到当前应用。有了这两句，就可以处理`POST`、`PUT`、`DELETE`等请求了。
+上面程式碼中，`body-parser`模組的作用，是對`POST`、`PUT`、`DELETE`等 HTTP 方法的資料體進行解析。`app.use`用來將這個模組載入到當前應用。有了這兩句，就可以處理`POST`、`PUT`、`DELETE`等請求了。
 
-下面查看新增的那个路由。
+下面檢視新增的那個路由。
 
 ```javascript
 router.post('/', function (req, res) {
@@ -705,15 +705,15 @@ router.post('/', function (req, res) {
 });
 ```
 
-上面代码表示，如果收到了`/`路径（实际上是`/home`路径）的`POST`请求，先从数据体拿到`name`字段，然后返回一段 JSON 信息。
+上面程式碼表示，如果收到了`/`路徑（實際上是`/home`路徑）的`POST`請求，先從資料體拿到`name`欄位，然後返回一段 JSON 資訊。
 
-在命令行下，启动这个应用。
+在命令列下，啟動這個應用。
 
 ```bash
 $ node app3.js
 ```
 
-然后，在 Chrome 浏览器的 Postman 插件里面，向`http://127.0.0.1:8080/home`发出一个`POST`请求。数据体的编码方法设为`x-www-form-urlencoded`，里面设置一个`name`字段，值可以随便取，假定设为`Alice`。也就是说，发出这样一个请求。
+然後，在 Chrome 瀏覽器的 Postman 外掛裡面，向`http://127.0.0.1:8080/home`發出一個`POST`請求。資料體的編碼方法設為`x-www-form-urlencoded`，裡面設定一個`name`欄位，值可以隨便取，假定設為`Alice`。也就是說，發出這樣一個請求。
 
 ```
 POST /home HTTP/1.1
@@ -723,7 +723,7 @@ Content-Type: application/x-www-form-urlencoded
 name=Alice
 ```
 
-如果一切正常，服务器会返回一段 JSON 信息。
+如果一切正常，伺服器會返回一段 JSON 資訊。
 
 ```javascript
 {
@@ -731,12 +731,12 @@ name=Alice
 }
 ```
 
-（7）打开`app4.js`，查看在所有路由之前新增的那个函数。
+（7）開啟`app4.js`，檢視在所有路由之前新增的那個函數。
 
 ```javascript
 var router = express.Router();
 
-// 新增的代码
+// 新增的程式碼
 router.use(function(req, res, next) {
   console.log('There is a requesting.');
   next();
@@ -746,38 +746,38 @@ router.get('/', function(req, res) {
   // ...
 ```
 
-`router.use`的作用是加载一个函数。这个函数被称为中间件，作用是在请求被路由匹配之前，先进行一些处理。上面这个中间件起到 logging 的作用，每收到一个请求，就在命令行输出一条记录。请特别注意，这个函数内部的`next()`，它代表下一个中间件，表示将处理过的请求传递给下一个中间件。这个例子只有一个中间件，就进入路由匹配处理（实际上，`bodyparser`、`router`本质都是中间件，整个 Express 的设计哲学就是不断对 HTTP 请求加工，然后返回一个 HTTP 回应）。
+`router.use`的作用是載入一個函數。這個函數被稱為中介軟體，作用是在請求被路由匹配之前，先進行一些處理。上面這個中介軟體起到 logging 的作用，每收到一個請求，就在命令列輸出一條記錄。請特別注意，這個函數內部的`next()`，它代表下一個中介軟體，表示將處理過的請求傳遞給下一個中介軟體。這個例子只有一箇中介軟體，就進入路由匹配處理（實際上，`bodyparser`、`router`本質都是中介軟體，整個 Express 的設計哲學就是不斷對 HTTP 請求加工，然後返回一個 HTTP 迴應）。
 
-### 练习
+### 練習
 
-1. 请增加一个中间件，服务器每次收到用户请求，会在服务器的控制台打印出收到请求的时间。
+1. 請增加一箇中介軟體，伺服器每次收到使用者請求，會在伺服器的控制檯列印出收到請求的時間。
 
-2. URL 的查询字符串，比如`localhost:8080?name=Alice`里面的`name`，可以用`req.query.name`拿到。请修改一个路由，使之可以收到查询字符串，然后输出`'Hello ' + req.query.name`。
+2. URL 的查詢字元串，比如`localhost:8080?name=Alice`裡面的`name`，可以用`req.query.name`拿到。請修改一個路由，使之可以收到查詢字元串，然後輸出`'Hello ' + req.query.name`。
 
 ## ESLint
 
-### 实验目的
+### 實驗目的
 
-1. 学会使用 ESLint 进行代码检查。
+1. 學會使用 ESLint 進行程式碼檢查。
 
-### 操作步骤
+### 操作步驟
 
-（1）进入`demos/eslint-demo`目录，安装 ESLint。
+（1）進入`demos/eslint-demo`目錄，安裝 ESLint。
 
 ```bash
 $ cd demos/eslint-demo
 $ npm install eslint --save-dev
 ```
 
-（2）通常，我们会使用别人已经写好的代码检查规则，这里使用的是 Airbnb 公司的规则。所以，还要安装 ESLint 这个规则模块。
+（2）通常，我們會使用別人已經寫好的程式碼檢查規則，這裡使用的是 Airbnb 公司的規則。所以，還要安裝 ESLint 這個規則模組。
 
 ```bash
 $ npm install eslint-plugin-import eslint-config-airbnb-base --save-dev
 ```
 
-上面代码中，`eslint-plugin-import`是运行这个规则集必须的，所以也要一起安装。
+上面程式碼中，`eslint-plugin-import`是執行這個規則集必須的，所以也要一起安裝。
 
-（3）ESLint 的配置文件是`.eslintrc.json`，放置在项目的根目录下面。新建这个文件，在里面指定使用 Airbnb 的规则。
+（3）ESLint 的配置檔案是`.eslintrc.json`，放置在項目的根目錄下面。新建這個檔案，在裡面指定使用 Airbnb 的規則。
 
 ```javascript
 {
@@ -785,7 +785,7 @@ $ npm install eslint-plugin-import eslint-config-airbnb-base --save-dev
 }
 ```
 
-（4）打开项目的`package.json`，在`scripts`字段里面添加三个脚本。
+（4）開啟項目的`package.json`，在`scripts`欄位裡面新增三個指令碼。
 
 ```javascript
 {
@@ -800,13 +800,13 @@ $ npm install eslint-plugin-import eslint-config-airbnb-base --save-dev
 }
 ```
 
-除了原有的`test`脚本，上面代码新定义了三个脚本，它们的作用如下。
+除了原有的`test`指令碼，上面程式碼新定義了三個指令碼，它們的作用如下。
 
-- `lint`：检查所有`js`文件的代码
-- `lint-html`：将检查结果写入一个网页文件`./reports/lint-results.html`
-- `lint-fix`：自动修正某些不规范的代码
+- `lint`：檢查所有`js`檔案的程式碼
+- `lint-html`：將檢查結果寫入一個網頁檔案`./reports/lint-results.html`
+- `lint-fix`：自動修正某些不規範的程式碼
 
-（5）运行静态检查命令。
+（5）執行靜態檢查命令。
 
 ```bash
 $ npm run lint
@@ -817,19 +817,19 @@ $ npm run lint
 ✖ 2 problems (1 error, 1 warning)
 ```
 
-正常情况下，该命令会从`index.js`脚本里面，检查出来两个错误：一个是不应该使用`var`命令，另一个是不应该在生产环境使用`console.log`方法。
+正常情況下，該命令會從`index.js`指令碼里面，檢查出來兩個錯誤：一個是不應該使用`var`命令，另一個是不應該在生產環境使用`console.log`方法。
 
-（6）修正错误。
+（6）修正錯誤。
 
 ```bash
 $ npm run lint-fix
 ```
 
-运行上面的命令以后，再查看`index.js`，可以看到`var x = 1;`被自动改成了`const x = 1;`。这样就消除了一个错误，但是还留下一个错误。
+執行上面的命令以後，再檢視`index.js`，可以看到`var x = 1;`被自動改成了`const x = 1;`。這樣就消除了一個錯誤，但是還留下一個錯誤。
 
-（7）修改规则。
+（7）修改規則。
 
-由于我们想要允许使用`console.log`方法，因此可以修改`.eslintrc.json`，改变`no-console`规则。请将`.eslintrc.json`改成下面的样子。
+由於我們想要允許使用`console.log`方法，因此可以修改`.eslintrc.json`，改變`no-console`規則。請將`.eslintrc.json`改成下面的樣子。
 
 ```javascript
 {
@@ -841,7 +841,7 @@ $ npm run lint-fix
 }
 ```
 
-再运行`npm run lint`，就不会报错了。
+再執行`npm run lint`，就不會報錯了。
 
 ```bash
 $ npm run lint
@@ -849,13 +849,13 @@ $ npm run lint
 
 ## Mocha
 
-### 实验目的
+### 實驗目的
 
-1. 学会使用 Mocha 进行单元测试。
+1. 學會使用 Mocha 進行單元測試。
 
-### 操作步骤
+### 操作步驟
 
-（1） 进入`demos/mocha-demo`目录，安装 Mocha 和 Chai。
+（1） 進入`demos/mocha-demo`目錄，安裝 Mocha 和 Chai。
 
 ```bash
 $ cd demos/mocha-demo
@@ -863,7 +863,7 @@ $ npm install -D mocha
 $ npm install -D chai
 ```
 
-（2）打开`add.js`文件，查看源码，我们要测试的就是这个脚本。
+（2）開啟`add.js`檔案，檢視源碼，我們要測試的就是這個指令碼。
 
 ```javascript
 function add(x, y) {
@@ -873,44 +873,44 @@ function add(x, y) {
 module.exports = add;
 ```
 
-（3）编写一个测试脚本`add.test.js`。
+（3）編寫一個測試指令碼`add.test.js`。
 
 ```javascript
 var add = require('./add.js');
 var expect = require('chai').expect;
 
-describe('加法函数的测试', function() {
-  it('1 加 1 应该等于 2', function() {
+describe('加法函數的測試', function() {
+  it('1 加 1 應該等於 2', function() {
     expect(add(1, 1)).to.be.equal(2);
   });
 });
 ```
 
-测试脚本与所要测试的源码脚本同名，但是后缀名为`.test.js`（表示测试）或者`.spec.js`（表示规格）。比如，`add.js`的测试脚本名字就是`add.test.js`。
+測試指令碼與所要測試的源碼指令碼同名，但是字尾名為`.test.js`（表示測試）或者`.spec.js`（表示規格）。比如，`add.js`的測試指令碼名字就是`add.test.js`。
 
-测试脚本里面应该包括一个或多个`describe`块，每个`describe`块应该包括一个或多个`it`块。
+測試指令碼里面應該包括一個或多個`describe`塊，每個`describe`塊應該包括一個或多個`it`塊。
 
-`describe`块称为"测试套件"（test suite），表示一组相关的测试。它是一个函数，第一个参数是测试套件的名称（"加法函数的测试"），第二个参数是一个实际执行的函数。
+`describe`塊稱為"測試套件"（test suite），表示一組相關的測試。它是一個函數，第一個參數是測試套件的名稱（"加法函數的測試"），第二個參數是一個實際執行的函數。
 
-`it`块称为"测试用例"（test case），表示一个单独的测试，是测试的最小单位。它也是一个函数，第一个参数是测试用例的名称（"1 加 1 应该等于 2"），第二个参数是一个实际执行的函数。
+`it`塊稱為"測試用例"（test case），表示一個單獨的測試，是測試的最小單位。它也是一個函數，第一個參數是測試用例的名稱（"1 加 1 應該等於 2"），第二個參數是一個實際執行的函數。
 
-上面的测试脚本里面，有一句断言。
+上面的測試指令碼里面，有一句斷言。
 
 ```javascript
 expect(add(1, 1)).to.be.equal(2);
 ```
 
-所谓"断言"，就是判断源码的实际执行结果与预期结果是否一致，如果不一致就抛出一个错误。上面这句断言的意思是，调用`add(1, 1)`，结果应该等于`2`。
+所謂"斷言"，就是判斷源碼的實際執行結果與預期結果是否一致，如果不一致就拋出一個錯誤。上面這句斷言的意思是，呼叫`add(1, 1)`，結果應該等於`2`。
 
-所有的测试用例（`it`块）都应该含有一句或多句的断言。它是编写测试用例的关键。断言功能由断言库来实现，Mocha本身不带断言库，所以必须先引入断言库。
+所有的測試用例（`it`塊）都應該含有一句或多句的斷言。它是編寫測試用例的關鍵。斷言功能由斷言庫來實現，Mocha本身不帶斷言庫，所以必須先引入斷言庫。
 
 ```javascript
 var expect = require('chai').expect;
 ```
 
-断言库有很多种，Mocha并不限制使用哪一种。上面代码引入的断言库是`chai`，并且指定使用它的`expect`断言风格。
+斷言庫有很多種，Mocha並不限制使用哪一種。上面程式碼引入的斷言庫是`chai`，並且指定使用它的`expect`斷言風格。
 
-（4）打开`package.json`文件，改写`scripts`字段的`test`脚本。
+（4）開啟`package.json`檔案，改寫`scripts`欄位的`test`指令碼。
 
 ```javascript
 "scripts": {
@@ -924,27 +924,27 @@ var expect = require('chai').expect;
 },
 ```
 
-（5）命令行下，执行下面的命令，运行测试用例。
+（5）命令列下，執行下面的命令，執行測試用例。
 
 ```bash
 $ npm test
 ```
 
-正常情况下，命令行会有提示，表示测试用例已经通过了。
+正常情況下，命令列會有提示，表示測試用例已經通過了。
 
-### 练习
+### 練習
 
-1. 请在`add.test.js`里面添加一个测试用例，测试`3`加上`-3`，`add`函数应该返回`0`。
+1. 請在`add.test.js`裡面新增一個測試用例，測試`3`加上`-3`，`add`函數應該返回`0`。
 
 ## Nightmare
 
-### 实验目的
+### 實驗目的
 
-1. 学会使用 Nightmare 完成功能测试。
+1. 學會使用 Nightmare 完成功能測試。
 
-### 操作步骤
+### 操作步驟
 
-（1）进入`./demos/nightmare-demo`目录，安装依赖。
+（1）進入`./demos/nightmare-demo`目錄，安裝依賴。
 
 ```bash
 $ cd demos/nightmare-demo
@@ -957,21 +957,21 @@ $ set ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
 $ npm install
 ```
 
-注意，Nightmare 会先安装 Electron，而 Electron 的安装需要下载境外的包，有时会连不上，导致安装失败。所以，这里先设置了环境变量，指定使用国内的 Electron 源，然后才执行安装命令。
+注意，Nightmare 會先安裝 Electron，而 Electron 的安裝需要下載境外的包，有時會連不上，導致安裝失敗。所以，這裡先設定了環境變數，指定使用國內的 Electron 源，然後才執行安裝命令。
 
-（2）查看一下浏览器自动化脚本`taobao.test.js`。
+（2）檢視一下瀏覽器自動化指令碼`taobao.test.js`。
 
 ```javascript
 var Nightmare = require('nightmare');
 var nightmare = Nightmare({ show: true });
 ```
 
-上面代码表示新建一个 Nightmare 实例，并且运行功能中，自动打开浏览器窗口。
+上面程式碼表示新建一個 Nightmare 例項，並且執行功能中，自動開啟瀏覽器視窗。
 
 ```javascript
 nightmare
   .goto('https://www.taobao.com/')
-  .type('#q', '电视机')
+  .type('#q', '電視機')
   .click('form[action*="/search"] [type=submit]')
   .wait('#spulist-grid')
   .evaluate(function () {
@@ -981,7 +981,7 @@ nightmare
   .end()
 ```
 
-上面代码表示，打开淘宝首页，在搜索框键入`电视机`，点击”搜索“按钮，等待`#spulist-grid`元素出现，在页面内注入（`evaluate`）代码，将执行结果返回。
+上面程式碼表示，開啟淘寶首頁，在搜尋框鍵入`電視機`，點選”搜尋“按鈕，等待`#spulist-grid`元素出現，在頁面內注入（`evaluate`）程式碼，將執行結果返回。
 
 ```javascript
   .then(function (result) {
@@ -992,19 +992,19 @@ nightmare
   });
 ```
 
-Nightmare 会返回一个 Promise 对象，`then`方法指定操作成功的回调函数，`catch`方法指定操作失败的回调函数。
+Nightmare 會返回一個 Promise 物件，`then`方法指定操作成功的回撥函數，`catch`方法指定操作失敗的回撥函數。
 
-（3）命令行下运行这个示例脚本。
+（3）命令列下執行這個示例指令碼。
 
 ```bash
 $ node taobao.test.js
 ```
 
-正常情况下，运行结束后，命令行会显示淘宝”电视机“搜索结果的第一项。
+正常情況下，執行結束後，命令列會顯示淘寶”電視機“搜尋結果的第一項。
 
-（4）浏览器打开`index.html`文件，这是 React 练习时做过的一个例子，点击`Hello World`，标题会变成`Hello Clicked`。我们就要编写测试脚本，测试这个功能。
+（4）瀏覽器開啟`index.html`檔案，這是 React 練習時做過的一個例子，點選`Hello World`，標題會變成`Hello Clicked`。我們就要編寫測試指令碼，測試這個功能。
 
-（5）打开测试脚本`test.js`。
+（5）開啟測試指令碼`test.js`。
 
 ```javascript
 var Nightmare = require('nightmare');
@@ -1028,11 +1028,11 @@ describe('test index.html', function() {
   });
 ```
 
-上面代码中，`before`和`after`是 Mocha 提供的两个钩子方法，分别在所有测试开始前和结束后运行。这里，我们在`before`方法里面，新建一个子进程，用来启动 HTTP 服务器；测试结束后，再杀掉这个子进程。
+上面程式碼中，`before`和`after`是 Mocha 提供的兩個鉤子方法，分別在所有測試開始前和結束後執行。這裡，我們在`before`方法裡面，新建一個子程序，用來啟動 HTTP 伺服器；測試結束後，再殺掉這個子程序。
 
-注意，`before`方法的参数是一个函数，它接受`done`作为参数。`done`是 Mocha 提供的一个函数，用来表示异步操作完成。如果不调用`done`，Mocha 就会认为异步操作没有结束，一直停在这一步，不往下执行，从而导致超时错误。
+注意，`before`方法的參數是一個函數，它接受`done`作為參數。`done`是 Mocha 提供的一個函數，用來表示非同步操作完成。如果不呼叫`done`，Mocha 就會認為非同步操作沒有結束，一直停在這一步，不往下執行，從而導致超時錯誤。
 
-子进程脚本`server.js`的代码非常简单，只有四行。
+子程序指令碼`server.js`的程式碼非常簡單，只有四行。
 
 ```javascript
 var httpServer = require('http-server');
@@ -1041,12 +1041,12 @@ server.listen(8080);
 process.send('listening');
 ```
 
-上面代码中，我们在`8080`端口启动 HTTP 服务器，然后向父进程发消息，表示启动完成。
+上面程式碼中，我們在`8080`埠啟動 HTTP 伺服器，然後向父程序發訊息，表示啟動完成。
 
-（6）真正的自动化测试脚本如下。
+（6）真正的自動化測試指令碼如下。
 
 ```javascript
-  it('点击后标题改变', function(done) {
+  it('點選後標題改變', function(done) {
     var nightmare = Nightmare({ show: true });
     nightmare
       .goto('http://127.0.0.1:8080/index.html')
@@ -1063,33 +1063,33 @@ process.send('listening');
   });
 ```
 
-上面代码中，首先打开网页，点击`h1`元素，然后等待 1 秒钟，注入脚本获取`h1`元素的文本内容。接着，在`then`方法里面，做一个断言，判断获取的文本是否正确。
+上面程式碼中，首先開啟網頁，點選`h1`元素，然後等待 1 秒鐘，注入指令碼獲取`h1`元素的文字內容。接著，在`then`方法裡面，做一個斷言，判斷獲取的文字是否正確。
 
-（7）运行这个测试脚本。
+（7）執行這個測試指令碼。
 
 ```bash
 $ npm test
 ```
 
-如果一切正常，命令行下会显示测试通过。
+如果一切正常，命令列下會顯示測試通過。
 
-### 练习
+### 練習
 
-1. 请写一个测试用例，验证`<h1>`的字体颜色是红色。（提示：可以使用`Window.getComputedStyle()`方法，获取元素的最终样式。）
+1. 請寫一個測試用例，驗證`<h1>`的字型顏色是紅色。（提示：可以使用`Window.getComputedStyle()`方法，獲取元素的最終樣式。）
 
 ## Travis CI
 
-### 实验目的
+### 實驗目的
 
-1. 了解持续集成的做法，学会使用 Travis CI。
+1. 瞭解持續整合的做法，學會使用 Travis CI。
 
-### 操作步骤
+### 操作步驟
 
-（1）注册 [Github](https://github.com) 的账户。如果你已经注册过，跳过这一步。
+（1）註冊 [Github](https://github.com) 的賬戶。如果你已經註冊過，跳過這一步。
 
-（2）访问这个代码库[`github.com/ruanyf/travis-ci-demo`](https://github.com/ruanyf/travis-ci-demo)，点击右上角的`Fork`按钮，将它克隆到你自己的空间里面。
+（2）訪問這個程式碼庫[`github.com/ruanyf/travis-ci-demo`](https://github.com/ruanyf/travis-ci-demo)，點選右上角的`Fork`按鈕，將它克隆到你自己的空間裡面。
 
-（3）将你`fork`的代码库，克隆到本地。注意，要将下面网址之中的`[your_username]`改成你的 Github 用户名。
+（3）將你`fork`的程式碼庫，克隆到本地。注意，要將下面網址之中的`[your_username]`改成你的 Github 使用者名稱。
 
 ```bash
 // Linux & Mac
@@ -1099,16 +1099,16 @@ $ git clone git@github.com:[your_username]/travis-ci-demo.git
 $ git clone https://github.com:[your_username]/travis-ci-demo
 ```
 
-（4）使用你的 Github 账户，登录 [Travis CI](https://travis-ci.org/auth) 的首页。然后，访问 [Profile](https://travis-ci.org/profile) 页面，选定`travis-ci-demo`代码库运行自动构建。
+（4）使用你的 Github 賬戶，登入 [Travis CI](https://travis-ci.org/auth) 的首頁。然後，訪問 [Profile](https://travis-ci.org/profile) 頁面，選定`travis-ci-demo`程式碼庫執行自動構建。
 
-（5）回到命令行，进入你本地的`travis-ci-demo`目录，切换到`demo01`分支。
+（5）回到命令列，進入你本地的`travis-ci-demo`目錄，切換到`demo01`分支。
 
 ```bash
 $ cd travis-ci-demo
 $ git checkout demo01
 ```
 
-项目根目录下面有一个`.travis.yml`文件，这是 Travis CI 的配置文件。如果没有这个文件，就不会触发 Travis CI 的自动构建。打开看一下。
+項目根目錄下面有一個`.travis.yml`檔案，這是 Travis CI 的配置檔案。如果沒有這個檔案，就不會觸發 Travis CI 的自動構建。開啟看一下。
 
 ```bash
 language: node_js
@@ -1116,9 +1116,9 @@ node_js:
   - "node"
 ```
 
-上面代码指定，使用 Node 完成构建，版本是最新的稳定版。
+上面程式碼指定，使用 Node 完成構建，版本是最新的穩定版。
 
-指定 Node 的版本号也是可以的。
+指定 Node 的版本號也是可以的。
 
 ```javascript
 language: node_js
@@ -1126,9 +1126,9 @@ node_js:
   - "4.1"
 ```
 
-上面代码指定使用 Node 4.1 版。
+上面程式碼指定使用 Node 4.1 版。
 
-（6）Travis CI 默认依次执行以下九个脚本。
+（6）Travis CI 預設依次執行以下九個指令碼。
 
 - `before_install`
 - `install`
@@ -1136,20 +1136,20 @@ node_js:
 - `script`
 - `after_success` 或者 `after_failure`
 - `after_script`
-- `before_deploy`（可选）
-- `deploy`（可选）
-- `after_deploy`（可选）
+- `before_deploy`（可選）
+- `deploy`（可選）
+- `after_deploy`（可選）
 
-用户需要用到哪个脚本，就需要提供该脚本的内容。
+使用者需要用到哪個指令碼，就需要提供該指令碼的內容。
 
-对于 Node 项目，以下两个脚本有默认值，可以不用自己设定。
+對於 Node 項目，以下兩個指令碼有預設值，可以不用自己設定。
 
 ```javascript
 "install": "npm install",
 "script": "npm test"
 ```
 
-（7）打开当前分支的`package.json`，可以发现它的`test`脚本是一个`lint`命令。
+（7）開啟當前分支的`package.json`，可以發現它的`test`指令碼是一個`lint`命令。
 
 ```javascript
 "scripts": {
@@ -1157,7 +1157,7 @@ node_js:
 },
 ```
 
-（8）在项目根目录下，新建一个新文件`NewUser.txt`，内容是你的用户名。提交这个文件，就会触发 Travis CI 的自动构建。
+（8）在項目根目錄下，新建一個新檔案`NewUser.txt`，內容是你的使用者名稱。提交這個檔案，就會觸發 Travis CI 的自動構建。
 
 ```bash
 $ git add -A
@@ -1165,9 +1165,9 @@ $ git commit -m 'Testing Travis CI'
 $ git push
 ```
 
-（9）等到 Travis CI 完成自动构建，到页面上[检查](https://travis-ci.org/repositories)构建结果。
+（9）等到 Travis CI 完成自動構建，到頁面上[檢查](https://travis-ci.org/repositories)構建結果。
 
-（10）切换到`demo02`分支，打开`package.json`，可以看到`test`脚本，现在需要完成两步操作了。
+（10）切換到`demo02`分支，開啟`package.json`，可以看到`test`指令碼，現在需要完成兩步操作了。
 
 ```javascript
   "scripts": {
@@ -1176,9 +1176,8 @@ $ git push
   },
 ```
 
-（11）重复上面第 8 步和第 9 步。
+（11）重複上面第 8 步和第 9 步。
 
-### 练习
+### 練習
 
-1. 修改`hello.js`，让其输出`Hello Node`。并修改测试用例`hello.test.js`，使之能够通过 Travis CI 的自动构建。
-
+1. 修改`hello.js`，讓其輸出`Hello Node`。並修改測試用例`hello.test.js`，使之能夠通過 Travis CI 的自動構建。
